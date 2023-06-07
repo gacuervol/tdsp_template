@@ -1,14 +1,14 @@
 # Importamod paqutes base
 import requests
 # Definimos url de cada base de datos
-url_db1 = 'https://ngdc.noaa.gov/mgg/sedthick/data/version2/gmt_netcdf/sedthick_world_v2.grd.gz'
+url_db1 = 'https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/GlobSed.zip'
 url_db2 = 'https://datapub.gfz-potsdam.de/download/10.5880.FIDGEO.2023.008-VENOun/IHFC_2023_GHFDB.CSV'
 # Definimos el folder de destino
 data_folder = '/home/mofoko/Documents/Metodologias/tdsp_template/scripts/data_acquisition'
 # Descargamos los datos para la db1
 response = requests.get(url_db1)
 print(f'status db1: {response}')
-with open(data_folder+'/sedthick.gz', "wb") as file:
+with open(data_folder+'/GlobSed.zip', "wb") as file:
     file.write(response.content)
 # Descargamos los datos para la db2
 response = requests.get(url_db2)
