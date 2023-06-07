@@ -13,7 +13,7 @@ Comparar el desempeño de diversos algoritmos de machine learning mediante el us
 ### Incluye:
 
 - **Descripción de los datos:** En este proyecto se utilizarán datos provenientes de dos bases de datos, con cobertura global, que proporciona información detallada sobre la distribución espacial de los datos: 
-    * **[Total Sediment Thickness of the World's Oceans and Marginal Seas Version 3 (GlobSed)](https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/fig_2_new_press.png):**  la cual contiene mediciones del grosor total de los sedimentos en los océanos y mares marginales a escala global. Ofreciendo información detallada sobre la distribución espacial del grosor sedimentario en diferentes áreas oceánicas.
+    * **[Total Sediment Thickness of the World's Oceans and Marginal Seas Version 3 (GlobSed)](https://www.ngdc.noaa.gov/mgg/sedthick/):**  la cual contiene mediciones del grosor total de los sedimentos en los océanos y mares marginales a escala global. Ofreciendo información detallada sobre la distribución espacial del grosor sedimentario en diferentes áreas oceánicas.
     ![Mapa global grosor sedimentario](https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/fig_2_new_press.png)
     * **[The Global Heat Flow Database 2023](https://ihfc-iugg.org/products/global-heat-flow-database/data):** contiene mediciones actualizadas del flujo de calor en el subsuelo oceánico. El conjunto de datos abarca diversas regiones oceánicas y proporciona una visión detallada del flujo de calor en diferentes profundidades y localidades.
     ![Mapa gloabal flujo de calor](https://ihfc-iugg.org/user/images/World_HeatFlow_IHFC_locations_shadow_25cm.png)
