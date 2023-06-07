@@ -6,8 +6,8 @@
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
+| `q` | Valor del flujo de calor de la superficie terrestre (hf) después de todas las correcciones por efectos instrumentales y efectos ambientales | `float` | $489000 - 0$ $[mW/m^2]$ | The Global Heat Flow Database: Update 2023 |
+| `lat` | Coordenada N-S | `float` | $89.666 - (-88.333)$ $[º]$ | The Global Heat Flow Database: Update 2023 |
 | variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
