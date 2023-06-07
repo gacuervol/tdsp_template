@@ -1,4 +1,4 @@
-# Importamod paqutes base
+# Importamos paqutes base
 import requests
 # Definimos url de cada base de datos
 url_db1 = 'https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/GlobSed.zip'
