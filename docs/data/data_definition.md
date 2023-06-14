@@ -43,10 +43,15 @@ with open(data_folder+'/IHFC_2023_GHFDB.csv', "wb") as file:
 
 ### Base de datos de destino
 
-- **Base de datos de destino:** para almacenar los datos, se ha seleccionado el servicio de *Google Drive* como la base de datos de destino. Google Drive ofrece una solución confiable y escalable para el almacenamiento y la gestión de datos. Proporciona un espacio de almacenamiento seguro y accesible desde cualquier ubicación con conexión a Internet. Además, Google Drive permite compartir y colaborar fácilmente en los datos con otros miembros del equipo.
+- **Base de datos de destino:**
 
-- **Estructura de la base de datos:** la estructura de la base de datos en Google Drive seguirá un enfoque jerárquico basado en carpetas. Se crearán carpetas principales para cada categoría de datos, como "Datos de Grosor Sedimentario" y "Datos de Flujo de Calor". Dentro de cada carpeta, se organizarán los archivos de datos en formatos adecuados, como CSV o NetCDF, según corresponda. Además, se asignarán nombres descriptivos a los archivos para facilitar la identificación y recuperación de los datos.
+Los datos se han almacenado de forma local en la siguiente ruta:
+> `/home/mofoko/Documents/Metodologias/tdsp_template/scripts/data_acquisition`
 
-- **Procedimientos de carga y transformación:** para cargar los datos en la base de datos de Google Drive, se utilizará el método de carga proporcionado por DVC (Data Version Control) junto con el comando `dvc remote add -d storage "gdrive://$DRIVEID"`. Este método garantiza una transferencia segura y eficiente de los datos al almacenamiento en la nube de Google Drive.
+Para asegurar su versionamiento y seguimiento, se utilizarán `commits` con la herramienta `dvc`. Esto permitirá tener un registro de los cambios realizados en los datos a lo largo del tiempo, lo que facilitará la reproducibilidad y colaboración en el proyecto.
+
+- **Estructura de la base de datos:** la estructura de la base de datos local seguirá un enfoque jerárquico basado en carpetas. Se crearán carpetas principales para cada categoría de datos, como "Datos de Grosor Sedimentario" y "Datos de Flujo de Calor". Dentro de cada carpeta, se organizarán los archivos de datos en formatos adecuados, como CSV o NetCDF, según corresponda. Además, se asignarán nombres descriptivos a los archivos para facilitar la identificación y recuperación de los datos.
+
+- **Procedimientos de carga y transformación:** para cargar los datos en la base de datos de Google Drive, se utilizará el método de carga proporcionado por DVC (Data Version Control) junto con el comando `dvc add {data}`. Este método garantiza el versionamiento seguro y eficiente de los datos en un entorno local.
 
     Adicionalmente, se realizarán los procedimientos de transformación y limpieza de los datos para garantizar su calidad y coherencia. Esto puede incluir la transformación de los datos y formatos, la corrección de errores o valores atípicos, y limpieza de datos nulos o faltantes. Estos procesos se implementarán utilizando bibliotecas y herramientas de procesamiento de datos como Pandas, NumPy y Xarray.
