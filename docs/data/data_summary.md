@@ -111,6 +111,7 @@ En esta sección se presenta un análisis de la relación entre las variables ex
 Para visualizar la realción existente entre las varaibles de flujo de calor y grosor sedimentario es posible transformar dichas varaibles para realizar un mejor análisis de correlación. Debido a que, se puede evidenciar la relación exponencial entre dichas varaibles es posible aplicar una [transformación de potencia](https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing-transformer). Dichas transformaciones son una familia de transformaciones paramétricas y monotónicas cuyo objetivo es asignar datos de cualquier distribución a una distribución lo más parecida posible a la de Gauss. Para este caso específico se utilizo una transformación de potencia utilizando el método `yeo-johnson` la cual es util para conjuntos de datos con valores positivos y negativos.
 
 La transformada de Yeo-Johnson viene dada por:
+
 $$\begin{split}x_i^{(\lambda)} =
 \begin{cases}
  [(x_i + 1)^\lambda - 1] / \lambda & \text{if } \lambda \neq 0, x_i \geq 0, \\[8pt]
