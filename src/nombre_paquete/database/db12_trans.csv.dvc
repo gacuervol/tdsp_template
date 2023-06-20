@@ -1,0 +1,4 @@
+outs:
+- md5: 8a8556ab476a3975c25e83f951f8b998
+  size: 1353752
+  path: db12_trans.csv

@@ -4,7 +4,7 @@ import requests
 url_db1 = 'https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/GlobSed.zip'
 url_db2 = 'https://datapub.gfz-potsdam.de/download/10.5880.FIDGEO.2023.008-VENOun/IHFC_2023_GHFDB.CSV'
 # Definimos el folder de destino
-data_folder = '/home/mofoko/Documents/Metodologias/tdsp_template/scripts/data_acquisition'
+data_folder = '/home/mofoko/Documents/Metodologias/tdsp_template/src/nombre_paquete/database'
 # Descargamos los datos para la db1
 response = requests.get(url_db1)
 print(f'status db1: {response}')

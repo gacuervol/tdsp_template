@@ -46,7 +46,7 @@ with open(data_folder+'/IHFC_2023_GHFDB.csv', "wb") as file:
 - **Base de datos de destino:**
 
 Los datos se han almacenado de forma local en la siguiente ruta:
-> `/home/mofoko/Documents/Metodologias/tdsp_template/scripts/data_acquisition`
+> `/home/mofoko/Documents/Metodologias/tdsp_template/src/nombre_paquete/database`
 
 Para asegurar su versionamiento y seguimiento, se utilizarán `commits` con la herramienta `dvc`. Esto permitirá tener un registro de los cambios realizados en los datos a lo largo del tiempo, lo que facilitará la reproducibilidad y colaboración en el proyecto.
 

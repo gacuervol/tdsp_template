@@ -1,0 +1,6 @@
+
+		begin
+      f = addfile("/home/mofoko/Documents/Metodologias/tdsp_template/scripts/data_acquisition/GlobSed-v3.nc","r")
+      print(f)
+		end
+    
