@@ -30,3 +30,12 @@ def load_data_prep():
     data_folder = os.path.join(module_dir, 'db12_prep.csv')
     db12_prep = pd.read_csv(data_folder)
     return db12_prep
+# Funcion para cargar datos con features selecionadas
+def load_data_feat():
+    """
+    Esta funcion carga el conjunto de datos con las features extraidas:
+    db preprocess + spatial features
+    """
+    data_folder = os.path.join(module_dir, 'db12_features.csv')
+    db12_feat = pd.read_csv(data_folder)
+    return db12_feat

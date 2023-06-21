@@ -1,6 +1,7 @@
 # Importamos los modulos necesarios
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
+import seaborn as sns
 import cartopy.crs as ccrs
 # Mapa global
 def plot_map(df, lon='lng', lat='lat', val='q'):
@@ -23,3 +24,28 @@ def plot_map(df, lon='lng', lat='lat', val='q'):
     gl.ylabels_right = False
     # Titulo
     ax.set_title('Mapa de datos de flujo de calor')
+# Pairplot personalizado
+def kde_hexbin_pairplot(df):
+    """
+    Crea un pairplot con gráficos de hexbins y KDE.
+    Parámetros:
+        - df: DataFrame - El dataframe de entrada
+    Retorna:
+        - None
+    """
+    # Define funcion para heixbin 
+    def hexbin(x, y, color, cmap="twilight"):
+        plt.hexbin(x, y, gridsize=14, alpha = .8, cmap=cmap, mincnt=0.0001)
+    # Crea el pairplot
+    g = sns.pairplot(df, 
+                    dropna=True, 
+                    markers='.', 
+                    diag_kind='hist',
+                    plot_kws=dict(color="k", alpha = 0.2),
+                    diag_kws=dict(color="k"))
+    # Scatterplot para la diagonal inferior
+    g.map_lower(sns.scatterplot, alpha=0.5, marker = '.', color='gray')
+    # Gráfico de KDE para la diagonal inferior
+    g.map_lower(sns.kdeplot, alpha=0.5, levels=6, color=".2", cmap='twilight',)
+    # Gráfico de hexbins para la diagonal superior
+    g.map_upper(hexbin)
