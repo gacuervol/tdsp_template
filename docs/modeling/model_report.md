@@ -54,7 +54,7 @@ En esta sección se presentarán las conclusiones y recomendaciones a partir de 
 
 > En resumen, los resultados de las métricas de evaluación para el modelo final indican un rendimiento insatisfactorio. El alto MSE y el MAE significativo indican que el modelo tiene dificultades para hacer predicciones precisas y tiende a cometer errores significativos. Además, el valor de R2 cercano a cero o negativo sugiere que el modelo no puede explicar adecuadamente la variabilidad de la variable objetivo.
 
-> Estos resultados revelan la necesidad de mejorar el modelo final y explorar otras técnicas o enfoques que puedan proporcionar una mejor capacidad predictiva y explicativa. Sin embargo, los resultados indican que el modelo final presenta un MSE ligeramente mayor, un MAE significativamente mayor y un R2 más bajo en comparación con el modelo base. Esto sugiere que el modelo base tiene un rendimiento generalmente mejor que el modelo final en términos de precisión y capacidad explicativa.
+> Estos resultados revelan la necesidad de mejorar el modelo final y explorar otras técnicas o enfoques que puedan proporcionar una mejor capacidad predictiva y explicativa. Sin embargo, los resultados indican que el modelo final presenta un MSE ligeramente menor, un MAE significativamente menor y un R2 más bajo en comparación con el modelo base. Esto sugiere que el modelo final tiene un rendimiento generalmente mejor que el modelo base en términos de precisión y capacidad explicativa.
 
 ## Referencias
 
