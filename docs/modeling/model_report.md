@@ -42,7 +42,7 @@ En esta sección se presentará una evaluación detallada del modelo final. Se d
 |MAE|160.249916|445.464788|
 |R2|-0.000926|-0.007605|
 
-> En términos del MSE, el modelo final presenta un valor ligeramente mayor (7.723634e+06) en comparación con el modelo base (7.672432e+06). Un MSE más bajo indica un mejor rendimiento, por lo tanto, el modelo base es ligeramente mejor en este aspecto.
+> En términos del MSE, el modelo base presenta un valor ligeramente mayor (7.723634e+06) en comparación con el modelo final (7.672432e+06). Un MSE más bajo indica un mejor rendimiento, por lo tanto, el modelo final es ligeramente mejor en este aspecto.
 
 > En cuanto al MAE, el modelo base muestra un valor más alto (445.464788) en comparación con el modelo final (160.249916). Un MAE más bajo indica una mejor precisión, por lo tanto, el modelo final es superior en términos de la desviación promedio entre las predicciones y los valores reales.
 
