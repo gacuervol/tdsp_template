@@ -36,17 +36,17 @@ En esta sección se presentará una evaluación detallada del modelo final. Se d
 
 > El modelo final fue evaluado utilizando tres métricas comunes en problemas de regresión: Mean Squared Error (MSE), Mean Absolute Error (MAE) y Coefficient of Determination (R2). A continuación se presenta una evaluación detallada de cada una de estas métricas y una interpretación de los resultados obtenidos:
 
-|Métrica|Modelo Final|Modelo Base|
+|Métrica| Modelo Base | Modelo Final|
 |---|---|---|
-|MSE|7.672432e+06|7.723634e+06|
-|MAE|160.249916|445.464788|
-|R2|-0.000926|-0.007605|
+|MSE|1.091069e+07|7.672432e+06|
+|MAE|511.106331|160.249916|
+|R2|-0.000738|-0.000926|
 
-> En términos del MSE, el modelo base presenta un valor ligeramente mayor (7.723634e+06) en comparación con el modelo final (7.672432e+06). Un MSE más bajo indica un mejor rendimiento, por lo tanto, el modelo final es ligeramente mejor en este aspecto.
+> En términos del MSE, el modelo base presenta un valor ligeramente mayor (1.091069e+07) en comparación con el modelo final (7.672432e+06). Un MSE más bajo indica un mejor rendimiento, por lo tanto, el modelo final es ligeramente mejor en este aspecto.
 
-> En cuanto al MAE, el modelo base muestra un valor más alto (445.464788) en comparación con el modelo final (160.249916). Un MAE más bajo indica una mejor precisión, por lo tanto, el modelo final es superior en términos de la desviación promedio entre las predicciones y los valores reales.
+> En cuanto al MAE, el modelo base muestra un valor más alto (511.106331) en comparación con el modelo final (160.249916). Un MAE más bajo indica una mejor precisión, por lo tanto, el modelo final es superior en términos de la desviación promedio entre las predicciones y los valores reales.
 
-> En cuanto al coeficiente de determinación R2, el modelo base también muestra un valor más bajo (-0.007605) en comparación con el modelo final (-0.000926). Un valor de R2 más alto indica una mejor capacidad explicativa, por lo tanto, el modelo final es ligeramente mejor en este aspecto.
+> En cuanto al coeficiente de determinación R2, el modelo base también muestra un valor más bajo (-0.000738) en comparación con el modelo final (-0.000926). Un valor de R2 más alto indica una mejor capacidad explicativa, por lo tanto, el modelo final es ligeramente mejor en este aspecto.
 
 ## Conclusiones y Recomendaciones
 

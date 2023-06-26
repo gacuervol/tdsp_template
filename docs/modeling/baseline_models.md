@@ -40,16 +40,16 @@ Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo 
 
 | MSE | MAE | R2 |
 | -------- | -------- | -------- |
-| 7.723634e+06  | 445.464788  | -0.007605  |
+| 1.091069e+07  | 511.106331  | -0.000738  |
 		
 ## Análisis de los resultados
 
 Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
-> El **MAE** obtenido es de  $445.46 mW/m^2$, lo que indica que, en promedio, las predicciones del modelo difieren en $445.46$ unidades de los valores reales.
+> El **MAE** obtenido es de  $511.10 mW/m^2$, lo que indica que, en promedio, las predicciones del modelo difieren en $511.10$ unidades de los valores reales.
 
-> El **MSE** obtenido es de 7.723634e+06, lo que implica que la variabilidad de los errores al cuadrado entre las predicciones y los valores reales sigue siendo bastante alta. Un MSE elevado indica que el modelo aún tiene dificultades para ajustarse adecuadamente a los datos observados y generar predicciones precisas.
+> El **MSE** obtenido es de 1.091069e+07, lo que implica que la variabilidad de los errores al cuadrado entre las predicciones y los valores reales sigue siendo bastante alta. Un MSE elevado indica que el modelo aún tiene dificultades para ajustarse adecuadamente a los datos observados y generar predicciones precisas.
 
-> El coeficiente de determinación (R2) obtenido es de -0.007605, lo cual es muy bajo y negativo. Un valor de R2 negativo indica que el modelo no es capaz de explicar la variabilidad de los datos y está generando predicciones alejadas de los valores reales. Este resultado sugiere que el modelo actualizado no es adecuado para el conjunto de datos y no está proporcionando un ajuste significativo.
+> El coeficiente de determinación (R2) obtenido es de -0.000738, lo cual es muy bajo y negativo. Un valor de R2 negativo indica que el modelo no es capaz de explicar la variabilidad de los datos y está generando predicciones alejadas de los valores reales. Este resultado sugiere que el modelo actualizado no es adecuado para el conjunto de datos y no está proporcionando un ajuste significativo.
 
 ## Conclusiones
 
