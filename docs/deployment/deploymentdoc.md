@@ -12,7 +12,7 @@
 > - **Software:** Linux base OS (Manjaro Linux X86_64), kernel 6.2.16-MANJARO
 > - **Hardware:** CPU: 11th Gen Intel i7-1195G7 (8) @ 5.000GHz, GPU: Intel TigerLake-LP GT2 [Iris Xe Graphics], RAM: 31804MiB
 - **Requisitos de seguridad:** (lista de requisitos de seguridad necesarios para el despliegue, como autenticación, encriptación de datos, etc.)
-> Validación de entrada de datos: Realiza una validación con `pydantic` de los datos de entrada enviados a la API. Esto incluye la verificación de tipos de datos. Al asegurarte de que los datos de entrada cumplan con los criterios esperados para prevenir ataques de inyección y garantizar la integridad de los datos.
+> Validación de entrada de datos: Realiza una validación con `pydantic` de los datos de entrada enviados a la API. Esto incluye la verificación de tipos de datos. Al asegurarse de que los datos de entrada cumplan con los criterios esperados para prevenir ataques de inyección y garantizar la integridad de los datos.
 - **Diagrama de arquitectura:** (imagen que muestra la arquitectura del sistema que se utilizará para desplegar el modelo)
 ![arquitectura](./images/arquitectura.png)
 
@@ -20,10 +20,10 @@
 
 - **Archivo principal:** (nombre del archivo principal que contiene el código de despliegue)
 > La aplicación diseñada está en el archivo:
-> - deploymentAPIs.py
+> - `deploymentAPIs.py`
 - **Rutas de acceso a los archivos:** (lista de rutas de acceso a los archivos necesarios para el despliegue)
 > La ruta de acceso al API:
-> - ./src/nombre_paquete/deployment/deploymentAPIs.py
+> - `./src/nombre_paquete/deployment/deploymentAPIs.py`
 - **Variables de entorno:** (lista de variables de entorno necesarias para el despliegue)
 > El despliegue no requiere de ninguna variable de entorno
 
@@ -39,9 +39,9 @@ pip install joblib==1.2.0
 pip install typing==4.6.3
 ```
 - **Instrucciones de configuración:** (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
-> El el API no dispone de parámetros configurables para la es uso del modelo.
+> El el API no dispone de parámetros configurables para utilizar el modelo.
 - **Instrucciones de uso:** (instrucciones detalladas para utilizar el modelo en la plataforma de despliegue)
-> Para utilizar el modelo es necesario unicarse en el directorio que contiene el archivo del API (`./src/nombre_paquete/deployment/`) utilizando el comando:
+> Para utilizar el modelo es necesario ubicarse en el directorio que contiene el archivo del API (`./src/nombre_paquete/deployment/`) utilizando el comando:
 ```
 cd ./src/nombre_paquete/deployment/
 ```
@@ -51,12 +51,12 @@ uvicorn deploymentAPIs:app --reload
 ```
 > Dicho comando nos proporcionará la dirección y puerto donde estará corriendo el API (`http://127.0.0.1:8000` sustituyendo la dirección IP por la propia). Por medio del navegador podemos conectarnos al API utilizando dicha dirección.
 
-> Para realizar una predicción utilizando el modelo desplegado por medio de nuestra API es necesario hacer una petición tipo `POST` por medio de cualquier herramienta que soporte peticiones `HTTP`. En este caso se proporciona un *script* para realizar una petición de prueba, que puede ser modificado para realizar nuevas peticiones, este archivo se dispone en la siguiente ruta:
+> Para realizar una predicción, utilizando el modelo desplegado por medio de nuestra API, es necesario hacer una petición tipo `POST` por medio de cualquier herramienta que soporte peticiones `HTTP`. En este caso se proporciona un *script* para realizar una petición de prueba, que puede ser modificado para realizar nuevas peticiones, este archivo se dispone en la siguiente ruta:
 
 ```
 ./src/nombre_paquete/deployment/API_test.py
 ```
-> En este *script* se proporciona un ejemplo de petición `POST`, utilizando el paquete `request`, para realizar una predicción proporcionando un archivo tipo `JSON` como entrada al modelo, este contiene un vector de con siete valores (input features): 
+> En este *script* se proporciona un ejemplo de petición `POST`, utilizando el paquete `request`, para realizar una predicción proporcionando un archivo tipo `JSON` como entrada al modelo. Este contiene un vector con siete valores (input features): 
 ```
 {
     "features_7": ['sedthick', 'knn', 'G', 'F', 'J', 'K', 'L']
