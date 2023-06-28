@@ -14,9 +14,9 @@ Comparar el desempeño de diversos algoritmos de machine learning mediante el us
 
 - **Descripción de los datos:** En este proyecto se utilizarán datos provenientes de dos bases de datos, con cobertura global, que proporciona información detallada sobre la distribución espacial de los datos: 
     * **[Total Sediment Thickness of the World's Oceans and Marginal Seas Version 3 (GlobSed)](https://www.ngdc.noaa.gov/mgg/sedthick/):**  la cual contiene mediciones del grosor total de los sedimentos en los océanos y mares marginales a escala global. Ofreciendo información detallada sobre la distribución espacial del grosor sedimentario en diferentes áreas oceánicas.
-    ![Mapa global grosor sedimentario](https://www.ngdc.noaa.gov/mgg/sedthick/data/version3/fig_2_new_press.png)
+    ![Mapa global grosor sedimentario](./images/sedthick_map.png)
     * **[The Global Heat Flow Database 2023](https://ihfc-iugg.org/products/global-heat-flow-database/data):** contiene mediciones actualizadas del flujo de calor en el subsuelo oceánico. El conjunto de datos abarca diversas regiones oceánicas y proporciona una visión detallada del flujo de calor en diferentes profundidades y localidades.
-    ![Mapa gloabal flujo de calor](https://ihfc-iugg.org/user/images/World_HeatFlow_IHFC_locations_shadow_25cm.png)
+    ![Mapa gloabal flujo de calor](./images/HeatFlow_map.png)
 - **Resultados esperados:** Se espera desarrollar modelos de machine learning con una alta precisión para predecir el flujo de calor en el subsuelo oceánico. Estos modelos serán capaces de utilizar los datos de grosor sedimentario para determinar a nivel global y local el flujo de calor en el subsuelo oceánico.
 - **Criterios de éxito:** se definen los siguientes criterios de éxito para le proyecto: 
     - **Precisión de predicción:** el criterio principal de éxito será la capacidad de los modelos de machine learning para predecir el flujo de calor en el subsuelo oceánico. Se utilizarán métricas de regresión como: error medio absoluto, error medio cuadrático y coeficiente de determinación. Se establecerá como criterio de éxito generar un modelo con un error absoluto medio inferior al 5%.
